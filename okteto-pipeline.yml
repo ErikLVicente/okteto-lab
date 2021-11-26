@@ -1,0 +1,8 @@
+deploy:
+  - okteto build -t okteto.dev/web:${OKTETO_GIT_COMMIT} web
+  - okteto build -t okteto.dev/db:${OKTETO_GIT_COMMIT} db
+ 
+devs:
+  - k8s/deployment-web.yml
+  - k8s/deployment-db.yml
+  - k8s/service-db.yml
