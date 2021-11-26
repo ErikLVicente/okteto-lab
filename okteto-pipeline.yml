@@ -1,3 +1,7 @@
+deploy:
+  - okteto build -t okteto.dev/web:${OKTETO_GIT_COMMIT} web
+  - okteto build -t okteto.dev/db:${OKTETO_GIT_COMMIT} db
+  - helm upgrade --install oktetolabs chart --set tag=${OKTETO_GIT_COMMIT}
 devs:
   - k8s/deployment-web.yml
   - k8s/deployment-db.yml
