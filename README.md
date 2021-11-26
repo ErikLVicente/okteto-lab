@@ -1,6 +1,6 @@
-# Oketto Cloud test - (Isolating Pods with Namespaces on Kubernetes)
+# Okteto Cloud test - (Isolating Pods with Namespaces on Kubernetes)
 
-I uploaded a simple application to Okteto Cloud to test this Developer Platform.
+I uploaded a simple application on Okteto Cloud to test Platform.
 
 
 
