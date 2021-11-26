@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 metadata: 
   name: mongo-service
-  namespace: db
+  namespace: db-eriklvicente
 spec: 
   selector:
     app: mongodb
